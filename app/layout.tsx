@@ -6,8 +6,9 @@ import { Toaster } from '@/components/ui/sonner';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Marwan Abdelwahab | Front-End Developer',
-  description: 'Front-End Engineer specialized in React.js, Next.js, and TypeScript. Crafting digital experiences with precision, logic, and design.',
+  title: 'Marwan Abdelwahab | Frontend Engineer',
+  description:
+    'Frontend engineer building scalable SaaS, marketplaces, and dashboards—shipping fast with startups and teams that care about real business outcomes.',
 };
 
 export default function RootLayout({
