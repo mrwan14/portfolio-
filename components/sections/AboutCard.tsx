@@ -3,9 +3,9 @@ import profile from '../../public/formal.png';
 
 export function AboutCard() {
   return (
-    <div className="bg-neutral-900/80 rounded-2xl p-8 border border-neutral-800/80 backdrop-blur-sm">
-      <div className="flex flex-col sm:flex-row lg:flex-col items-center text-center sm:text-left lg:text-center gap-6">
-        <div className="w-24 h-24 shrink-0 relative rounded-full overflow-hidden bg-neutral-800 ring-1 ring-white/10">
+    <div className="rounded-2xl p-6 sm:p-8 border border-neutral-800/60 bg-neutral-950/30">
+      <div className="flex flex-row items-center gap-5 sm:gap-6">
+        <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 relative rounded-full overflow-hidden bg-neutral-800 ring-1 ring-white/10">
           <Image
             src={profile}
             alt="Marwan Abdelwahab"
@@ -14,10 +14,12 @@ export function AboutCard() {
             priority
           />
         </div>
-        <div>
-          <p className="text-white font-light text-lg mb-1">Marwan Abdelwahab</p>
+        <div className="min-w-0 text-left">
+          <p className="text-white font-light text-lg sm:text-xl mb-1">
+            Marwan Abdelwahab
+          </p>
           <p className="text-neutral-500 text-sm font-light leading-relaxed">
-            Cairo · Frontend engineer building product-grade interfaces.
+            Frontend engineer, Cairo.
           </p>
         </div>
       </div>

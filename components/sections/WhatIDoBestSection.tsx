@@ -4,33 +4,33 @@ import { Layers, Plug, Gauge, Languages, Store } from 'lucide-react';
 
 const ITEMS = [
   {
-    title: 'Scalable frontend architecture',
+    title: 'Structure that survives the next feature',
     description:
-      'Component systems, boundaries, and patterns that stay maintainable as products grow.',
+      'I set up components and boundaries so the codebase doesn’t fight you when the roadmap shifts.',
     icon: Layers,
   },
   {
-    title: 'API integrations',
+    title: 'When the API misbehaves',
     description:
-      'Reliable data flows, error states, and UX that matches how backends actually behave.',
+      'Empty states, retries, and copy that match reality—so users aren’t left guessing.',
     icon: Plug,
   },
   {
-    title: 'Performance optimization',
+    title: 'Speed you can feel',
     description:
-      'Perceived speed, bundle discipline, and UI that stays smooth under real usage.',
+      'I care about perceived performance: what loads first, what waits, and what never janks.',
     icon: Gauge,
   },
   {
-    title: 'RTL & multilingual apps',
+    title: 'Arabic and English, same polish',
     description:
-      'Arabic-first layouts, direction-aware components, and polished bilingual experiences.',
+      'RTL isn’t an afterthought here—layout, type, and microcopy get the same attention both ways.',
     icon: Languages,
   },
   {
-    title: 'SaaS & marketplaces',
+    title: 'The unglamorous product surfaces',
     description:
-      'Dashboards, listings, and conversion paths tuned for operators and end users.',
+      'Dashboards, listings, admin tools—the places where operators and customers spend real time.',
     icon: Store,
   },
 ];
@@ -40,10 +40,11 @@ export function WhatIDoBestSection() {
     <Section className="border-t border-neutral-900">
       <Reveal>
         <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight mb-4">
-          What I Do Best
+          How I usually show up
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-14">
-          Depth where products need it most—so teams can ship faster without sacrificing quality.
+          Not a checklist of buzzwords—just the places I tend to go deep when we’re building something
+          together.
         </p>
       </Reveal>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

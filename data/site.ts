@@ -1,16 +1,15 @@
-/** Edit these for hero and credibility copy */
+/** Hero is the opening beat—keep it short; details live in later sections */
 export const SITE_HERO = {
-  headline: 'I build scalable web products that ship in the real world.',
+  headline: 'I help teams ship web products that feel considered, not rushed.',
   subheadline:
-    'Frontend engineer focused on marketplaces, SaaS, and dashboards—moving fast with startups and teams who care about business outcomes.',
-  credibility:
-    'Years shipping production UIs for SaaS, marketplaces, and client-led products across MENA and global teams.',
+    'Most of my work is frontends for SaaS, marketplaces, and dashboards—usually with people who care what happens after launch.',
 };
 
 export const EXPERIENCE_STATS = {
   yearsLabel: '3+ years',
-  yearsDetail: 'building and iterating on production frontends',
+  yearsDetail:
+    'In that time I’ve been in the weeds with production UIs—Arabic and English, tight timelines, real users.',
   productTypes: ['SaaS platforms', 'Marketplaces', 'Dashboards & admin tools'],
   clientsLine:
-    'I work directly with founders, product, and engineering—turning roadmaps into interfaces people actually use.',
+    'I like sitting with founders, product, and engineering until the thing on the screen matches the story we agreed on.',
 };

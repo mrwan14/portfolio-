@@ -78,10 +78,10 @@ export function OtherProjectsSection({ projects }: OtherProjectsSectionProps) {
     <Section className="border-t border-neutral-900">
       <Reveal>
         <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight mb-4">
-          Other Projects
+          More along the way
         </h2>
         <p className="text-neutral-400 font-light text-base max-w-2xl mb-8">
-          Additional work—still product-focused, in a lighter format.
+          Smaller pieces and experiments—same mindset, less room to tell the full story here.
         </p>
       </Reveal>
       <Reveal delayMs={80}>
