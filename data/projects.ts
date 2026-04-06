@@ -204,9 +204,13 @@ const projects: Project[] = [
     title: 'Angezz',
     tagline: 'Exam digitization and results for schools in Saudi Arabia.',
     tags: ['EdTech', 'RTL'],
-    highlights: [],
+    highlights: [
+      'RTL-first flows for administrators and students around exams and results',
+      'Structured journeys for digitized examinations and result corrections',
+      'Arabic-first UX tuned for classroom and school workflows',
+    ],
     url: 'https://angezz.vercel.app/ar',
-    featured: false,
+    featured: true,
     problem:
       'Schools needed a digital path for examinations and result corrections aligned with local workflows.',
     whatIBuilt:

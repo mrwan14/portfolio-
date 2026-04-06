@@ -15,9 +15,16 @@ export function HeroSection() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white tracking-tight leading-[1.12]">
               {SITE_HERO.headline}
             </h1>
-            <p className="text-lg md:text-xl text-neutral-400 font-light leading-relaxed max-w-xl">
-              {SITE_HERO.subheadline}
-            </p>
+            <div className="space-y-4 max-w-xl">
+              <p className="text-lg md:text-xl text-neutral-400 font-light leading-relaxed">
+                {SITE_HERO.subheadline}
+              </p>
+              {SITE_HERO.personality ? (
+                <p className="text-base text-neutral-500 font-light leading-relaxed">
+                  {SITE_HERO.personality}
+                </p>
+              ) : null}
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-1">
             <a
