@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Marwan Abdelwahab | Frontend Engineer',
   description:
-    'Frontend engineer building scalable SaaS, marketplaces, and dashboards—shipping fast with startups and teams that care about real business outcomes.',
+    'Frontend engineer building scalable SaaS, marketplaces, and dashboards, shipping fast with startups and teams that care about real business outcomes.',
 };
 
 export default function RootLayout({

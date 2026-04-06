@@ -15,7 +15,7 @@ export function ContactSection() {
             </h2>
             <p className="text-neutral-400 font-light leading-relaxed">
               Send a note with what you&apos;re building, where you&apos;re stuck, and what &quot;good&quot;
-              looks like—I&apos;ll reply with honest thoughts on fit.
+              looks like. I&apos;ll reply with honest thoughts on fit.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 shrink-0">

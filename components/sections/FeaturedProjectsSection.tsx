@@ -15,7 +15,7 @@ export function FeaturedProjectsSection({ projects }: FeaturedProjectsSectionPro
           Things I’m proud of
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-14">
-          A few builds where the details mattered—performance, clarity, and how people actually moved
+          A few builds where the details mattered: performance, clarity, and how people actually moved
           through the product.
         </p>
       </Reveal>

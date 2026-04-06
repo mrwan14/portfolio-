@@ -12,7 +12,7 @@ const ITEMS = [
   {
     title: 'When the API misbehaves',
     description:
-      'Empty states, retries, and copy that match reality—so users aren’t left guessing.',
+      'Empty states, retries, and copy that match reality, so users aren’t left guessing.',
     icon: Plug,
   },
   {
@@ -24,13 +24,13 @@ const ITEMS = [
   {
     title: 'Arabic and English, same polish',
     description:
-      'RTL isn’t an afterthought here—layout, type, and microcopy get the same attention both ways.',
+      'RTL isn’t an afterthought here: layout, type, and microcopy get the same attention both ways.',
     icon: Languages,
   },
   {
     title: 'The unglamorous product surfaces',
     description:
-      'Dashboards, listings, admin tools—the places where operators and customers spend real time.',
+      'Dashboards, listings, admin tools: the places where operators and customers spend real time.',
     icon: Store,
   },
 ];
@@ -43,7 +43,7 @@ export function WhatIDoBestSection() {
           How I usually show up
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-14">
-          Not a checklist of buzzwords—just the places I tend to go deep when we’re building something
+          Not a checklist of buzzwords, just the places I tend to go deep when we’re building something
           together.
         </p>
       </Reveal>

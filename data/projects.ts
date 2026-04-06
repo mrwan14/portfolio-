@@ -34,7 +34,7 @@ const projects: Project[] = [
     url: 'https://tanklist.com/',
     featured: true,
     problem:
-      'Teams needed a single platform to list, discover, and transact on businesses worldwide—with clarity, trust, and speed at scale.',
+      'Teams needed a single platform to list, discover, and transact on businesses worldwide, with clarity, trust, and speed at scale.',
     whatIBuilt:
       'Frontend experiences for discovery, listings, and core marketplace flows, emphasizing fast navigation, clear hierarchy, and maintainable patterns as the product grew.',
     keyFeatures: [
@@ -68,9 +68,9 @@ const projects: Project[] = [
     url: 'https://voliop.vercel.app/',
     featured: true,
     problem:
-      'Equestrian buyers and sellers needed one place to trade horses, join auctions, rent stables, and book vets and trainers—without juggling fragmented sites or unclear trust signals.',
+      'Equestrian buyers and sellers needed one place to trade horses, join auctions, rent stables, and book vets and trainers, without juggling fragmented sites or unclear trust signals.',
     whatIBuilt:
-      'Frontend for Voliop (voliop.vercel.app) under Why Not Tech—freelance / project-based: a fast, responsive Next.js and Tailwind UI spanning marketing pages, listings, categories, and core marketplace journeys.',
+      'Frontend for Voliop (voliop.vercel.app) under Why Not Tech (freelance / project-based): a fast, responsive Next.js and Tailwind UI spanning marketing pages, listings, categories, and core marketplace journeys.',
     keyFeatures: [
       'Responsive interface across breakpoints with performance-minded page structure',
       'Category and listing experiences with dynamic routing across marketplace verticals',
@@ -108,7 +108,7 @@ const projects: Project[] = [
     url: 'https://helbing.vercel.app/',
     featured: true,
     problem:
-      'Readers wanted a calm, Arabic-first space for weekly blogs, podcasts, and creative exercises—while the business needed accounts, subscriptions, and gated premium content.',
+      'Readers wanted a calm, Arabic-first space for weekly blogs, podcasts, and creative exercises, while the business needed accounts, subscriptions, and gated premium content.',
     whatIBuilt:
       'Full frontend for Helbing World (freelance / project-based): a polished, on-brand experience with RTL-native layouts, auth, paywalled content, and rich editorial pages.',
     keyFeatures: [

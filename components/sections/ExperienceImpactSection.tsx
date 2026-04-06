@@ -10,7 +10,7 @@ export function ExperienceImpactSection() {
           Where this comes from
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-12">
-          A bit of context before the case studies—so you know what kind of rooms I’ve been in, not just
+          A bit of context before the case studies, so you know what kind of rooms I’ve been in, not just
           what’s on my CV.
         </p>
       </Reveal>

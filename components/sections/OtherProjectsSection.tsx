@@ -81,7 +81,7 @@ export function OtherProjectsSection({ projects }: OtherProjectsSectionProps) {
           More along the way
         </h2>
         <p className="text-neutral-400 font-light text-base max-w-2xl mb-8">
-          Smaller pieces and experiments—same mindset, less room to tell the full story here.
+          Smaller pieces and experiments, same mindset, less room to tell the full story here.
         </p>
       </Reveal>
       <Reveal delayMs={80}>
