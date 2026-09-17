@@ -10,7 +10,7 @@ export function WhatIDoBestSection() {
           Strengths &amp; skills
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-10">
-          Architecture, product judgment, and multilingual delivery — plus the stack I use to ship
+          Architecture, product judgment, and multilingual delivery, plus the stack I use to ship
           it.
         </p>
       </Reveal>

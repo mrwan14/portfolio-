@@ -81,7 +81,7 @@ export function OtherProjectsSection({ projects }: OtherProjectsSectionProps) {
           Additional projects
         </h2>
         <p className="text-neutral-400 font-light text-base max-w-2xl mb-8">
-          Compact listings — subscriptions, edtech, lead gen, internal tools, and agency work.
+          Compact listings: subscriptions, edtech, lead gen, internal tools, and agency work.
         </p>
       </Reveal>
       <Reveal delayMs={80}>

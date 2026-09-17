@@ -66,7 +66,7 @@ export const EXPERIENCE_ROLES: ExperienceRole[] = [
 export const EXPERIENCE_INTRO = {
   yearsLabel: '4+ years',
   yearsDetail:
-    'intense, high-impact shipping across Teleoceans, Aura Space, and client products — marketplaces, SaaS, education, hospitality, real estate, and fintech.',
+    'intense, high-impact shipping across Teleoceans, Aura Space, and client products: marketplaces, SaaS, education, hospitality, real estate, and fintech.',
 };
 
 export const CORE_STRENGTHS = [
@@ -121,7 +121,7 @@ export const EDUCATION = {
   degree: "Bachelor's Degree in Software Engineering",
   dates: '2019 – 2023',
   school: 'Faculty of Computers and Artificial Intelligence, Helwan University',
-  project: 'Graduation Project: Korek App — Vehicle Management System',
+  project: 'Graduation Project: Korek App, Vehicle Management System',
 };
 
 export const LANGUAGES = [

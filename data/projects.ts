@@ -43,7 +43,7 @@ const projects: Project[] = [
     problem:
       'Riders, trainers, and stable operators needed one product to discover services, book, and manage operations instead of fragmented tools.',
     whatIBuilt:
-      'Led frontend architecture and team involvement across both platforms. The web frontend is a Next.js 14, TypeScript, and Tailwind marketing site on Vercel with a hero and service sections. The mobile app is Flutter with clean architecture, Firebase auth, OTP login, and push notifications — a rider-facing experience with onboarding, service browsing, stable profiles, booking flows, order tracking, favorites, and account management.',
+      'Led frontend architecture and team involvement across both platforms. The web frontend is a Next.js 14, TypeScript, and Tailwind marketing site on Vercel with a hero and service sections. The mobile app is Flutter with clean architecture, Firebase auth, OTP login, and push notifications, a rider-facing experience with onboarding, service browsing, stable profiles, booking flows, order tracking, favorites, and account management.',
     keyFeatures: [
       'Marketing-driven Next.js landing site with hero and service sections',
       'Flutter rider app: onboarding, browsing, stables, bookings, orders, favorites, account',
@@ -82,7 +82,7 @@ const projects: Project[] = [
     featured: true,
     proprietary: true,
     problem:
-      'A restaurant technology product needed a customer-facing bilingual web app and a serious admin console — ordering, live status, inventory, and analytics — without compromising RTL or motion quality.',
+      'A restaurant technology product needed a customer-facing bilingual web app and a serious admin console for ordering, live status, inventory, and analytics, without compromising RTL or motion quality.',
     whatIBuilt:
       'Full-stack frontend delivery for the customer website and admin dashboard. The customer app includes phone + OTP auth (international phone input, reCAPTCHA), menu browsing, order flow, live status, order history with Lottie, plus marketing, partners, and scroll-based motion (Framer Motion, GSAP). The admin side covers KPI charts, drag-and-drop order status, CRUD for menus, inventory, and customers, and a shared internationalized layout. Backend integration through Supabase and Firebase, with React Hook Form and Yup/Zod validation.',
     keyFeatures: [

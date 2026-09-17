@@ -53,7 +53,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
         </p>
         {project.proprietary && (
           <p className="text-sm text-neutral-500 font-light mt-4">
-            Proprietary client project — no public live link.
+            Proprietary client project. No public live link.
           </p>
         )}
         {hasLiveUrl && (

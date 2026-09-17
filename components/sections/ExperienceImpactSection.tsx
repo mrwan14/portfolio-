@@ -10,7 +10,7 @@ export function ExperienceImpactSection() {
           Experience
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-12">
-          {EXPERIENCE_INTRO.yearsLabel} of production work — {EXPERIENCE_INTRO.yearsDetail}
+          {EXPERIENCE_INTRO.yearsLabel} of production work: {EXPERIENCE_INTRO.yearsDetail}
         </p>
       </Reveal>
 

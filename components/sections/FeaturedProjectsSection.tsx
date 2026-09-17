@@ -15,7 +15,7 @@ export function FeaturedProjectsSection({ projects }: FeaturedProjectsSectionPro
           Featured projects
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-14">
-          Seven builds across marketplaces, hospitality, education, and real estate — architecture,
+          Seven builds across marketplaces, hospitality, education, and real estate: architecture,
           multilingual UX, and the impact on the people using them.
         </p>
       </Reveal>
