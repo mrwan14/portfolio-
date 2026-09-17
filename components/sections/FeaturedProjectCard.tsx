@@ -9,8 +9,9 @@ type FeaturedProjectCardProps = {
 };
 
 export function FeaturedProjectCard({ project }: FeaturedProjectCardProps) {
-  const hasLiveUrl = project.url && project.url !== '#';
+  const hasLiveUrl = project.url && project.url !== '#' && !project.proprietary;
   const highlights = project.highlights.slice(0, 3);
+  const tech = project.techStack.slice(0, 6);
 
   return (
     <article
@@ -26,11 +27,19 @@ export function FeaturedProjectCard({ project }: FeaturedProjectCardProps) {
             <h3 className="text-xl md:text-2xl font-light text-white group-hover:text-neutral-100 transition-colors">
               {project.title}
             </h3>
+            {project.role && (
+              <p className="text-neutral-400 text-sm font-light mt-1">{project.role}</p>
+            )}
             <p className="text-neutral-500 text-sm font-light mt-1">{project.tagline}</p>
           </div>
           {project.comingSoon && (
             <span className="text-xs font-medium uppercase tracking-wider text-amber-500/90">
               Soon
+            </span>
+          )}
+          {project.proprietary && (
+            <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">
+              Client project
             </span>
           )}
         </div>
@@ -46,7 +55,7 @@ export function FeaturedProjectCard({ project }: FeaturedProjectCardProps) {
           ))}
         </div>
         {highlights.length > 0 && (
-          <ul className="space-y-2 pt-2">
+          <ul className="space-y-2 pt-1">
             {highlights.map((line) => (
               <li
                 key={line}
@@ -59,6 +68,23 @@ export function FeaturedProjectCard({ project }: FeaturedProjectCardProps) {
               </li>
             ))}
           </ul>
+        )}
+        {project.impact && (
+          <p className="text-neutral-500 text-sm font-light leading-relaxed pt-1">
+            {project.impact}
+          </p>
+        )}
+        {tech.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 pt-1">
+            {tech.map((item) => (
+              <span
+                key={item}
+                className="text-[11px] font-light text-neutral-500 border border-neutral-800 rounded-md px-2 py-0.5"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         )}
       </div>
       <div className="flex flex-wrap gap-3 mt-8 pt-6 border-t border-neutral-800/80">

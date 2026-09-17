@@ -3,9 +3,9 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { HeroCta } from '@/components/aceternity/hero-button';
 import { HeroSpotlightSection } from '@/components/aceternity/spotlight';
 import { AboutCard } from '@/components/sections/AboutCard';
-import { SITE_HERO } from '@/data/site';
+import { SITE_CONTACT, SITE_HERO } from '@/data/site';
 
-const MAILTO = 'mailto:marwanabdelwahab9@gmail.com';
+const MAILTO = `mailto:${SITE_CONTACT.email}`;
 
 export function HeroSection() {
   return (
@@ -14,12 +14,22 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-4">
+              <p className="text-neutral-500 text-sm font-light uppercase tracking-wider">
+                {SITE_HERO.currentRole}
+              </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white tracking-tight leading-[1.12]">
                 {SITE_HERO.headline}
               </h1>
-              <p className="max-w-xl text-base md:text-lg text-neutral-400 font-light leading-relaxed">
-                {SITE_HERO.subheadline}
-              </p>
+              <div className="max-w-xl space-y-4">
+                {SITE_HERO.paragraphs.map((paragraph) => (
+                  <p
+                    key={paragraph.slice(0, 32)}
+                    className="text-base md:text-lg text-neutral-400 font-light leading-relaxed"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-1">
               <HeroCta href="#projects">
@@ -27,7 +37,7 @@ export function HeroSection() {
                 <ArrowRight className="w-4 h-4 shrink-0 opacity-80" aria-hidden />
               </HeroCta>
               <HeroCta href={MAILTO}>
-                Let&apos;s talk
+                Let&apos;s build something great
                 <ArrowUpRight className="w-4 h-4 shrink-0 opacity-80" aria-hidden />
               </HeroCta>
             </div>

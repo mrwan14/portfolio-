@@ -18,8 +18,11 @@ export function AboutCard() {
           <p className="text-white font-light text-lg sm:text-xl mb-1">
             Marwan Abdelwahab
           </p>
-          <p className="text-neutral-500 text-sm font-light leading-relaxed">
-            Frontend engineer, Cairo.
+          <p className="text-neutral-300 text-sm font-light leading-relaxed">
+            Senior Frontend Engineer
+          </p>
+          <p className="text-neutral-500 text-sm font-light leading-relaxed mt-0.5">
+            Teleoceans · Cairo
           </p>
         </div>
       </div>

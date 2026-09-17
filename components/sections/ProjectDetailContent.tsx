@@ -8,7 +8,7 @@ type ProjectDetailContentProps = {
 };
 
 export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
-  const hasLiveUrl = project.url && project.url !== '#';
+  const hasLiveUrl = project.url && project.url !== '#' && !project.proprietary;
 
   return (
     <article className="max-w-3xl">
@@ -36,13 +36,26 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
               Case study in progress
             </span>
           )}
+          {project.proprietary && (
+            <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">
+              Client project
+            </span>
+          )}
         </div>
         <h1 className="text-4xl md:text-5xl font-light text-white tracking-tight mb-4">
           {project.title}
         </h1>
+        {project.role && (
+          <p className="text-neutral-300 font-light mb-3">{project.role}</p>
+        )}
         <p className="text-xl text-neutral-400 font-light leading-relaxed">
           {project.tagline}
         </p>
+        {project.proprietary && (
+          <p className="text-sm text-neutral-500 font-light mt-4">
+            Proprietary client project — no public live link.
+          </p>
+        )}
         {hasLiveUrl && (
           <a
             href={project.url}
@@ -66,6 +79,13 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
           <h2 className="text-lg font-light text-white mb-3 tracking-tight">What I built</h2>
           <p className="text-neutral-400 font-light leading-relaxed">{project.whatIBuilt}</p>
         </section>
+
+        {project.impact && (
+          <section>
+            <h2 className="text-lg font-light text-white mb-3 tracking-tight">Impact</h2>
+            <p className="text-neutral-400 font-light leading-relaxed">{project.impact}</p>
+          </section>
+        )}
 
         <section>
           <h2 className="text-lg font-light text-white mb-3 tracking-tight">Key features</h2>

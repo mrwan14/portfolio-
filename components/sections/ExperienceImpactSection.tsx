@@ -1,54 +1,67 @@
 import { Section } from '@/components/layout/Section';
 import { Reveal } from '@/components/layout/Reveal';
-import { EXPERIENCE_STATS } from '@/data/site';
+import { EXPERIENCE_INTRO, EXPERIENCE_ROLES } from '@/data/site';
 
 export function ExperienceImpactSection() {
   return (
     <Section className="border-t border-neutral-900">
       <Reveal>
         <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight mb-4">
-          Where this comes from
+          Experience
         </h2>
         <p className="text-neutral-400 font-light text-base md:text-lg max-w-2xl mb-12">
-          A bit of context before the case studies, so you know what kind of rooms I’ve been in, not just
-          what’s on my CV.
+          {EXPERIENCE_INTRO.yearsLabel} of production work — {EXPERIENCE_INTRO.yearsDetail}
         </p>
       </Reveal>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-        <Reveal delayMs={60}>
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-950/40 p-8 md:p-10">
-            <p className="text-neutral-500 text-sm font-light uppercase tracking-wider mb-3">
-              So far
-            </p>
-            <p className="text-3xl md:text-4xl font-light text-white mb-4">
-              {EXPERIENCE_STATS.yearsLabel}
-            </p>
-            <p className="text-neutral-400 font-light leading-relaxed">
-              {EXPERIENCE_STATS.yearsDetail}
-            </p>
-          </div>
-        </Reveal>
-        <Reveal delayMs={120}>
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-950/40 p-8 md:p-10">
-            <p className="text-neutral-500 text-sm font-light uppercase tracking-wider mb-4">
-              Shapes of work
-            </p>
-            <ul className="space-y-3 mb-8">
-              {EXPERIENCE_STATS.productTypes.map((line) => (
-                <li
-                  key={line}
-                  className="text-neutral-300 font-light flex items-start gap-3"
-                >
-                  <span className="text-neutral-600 mt-1.5 w-1.5 h-1.5 rounded-full bg-neutral-500 shrink-0" />
-                  {line}
-                </li>
-              ))}
-            </ul>
-            <p className="text-neutral-500 text-sm font-light leading-relaxed border-t border-neutral-800 pt-6">
-              {EXPERIENCE_STATS.clientsLine}
-            </p>
-          </div>
-        </Reveal>
+
+      <div className="relative space-y-8">
+        <div
+          className="absolute left-[7px] top-3 bottom-3 w-px bg-neutral-800 hidden sm:block"
+          aria-hidden
+        />
+        {EXPERIENCE_ROLES.map((role, i) => (
+          <Reveal key={`${role.company}-${role.dates}`} delayMs={i * 80}>
+            <article className="relative sm:pl-10">
+              <span
+                className="absolute left-0 top-3 hidden sm:block w-4 h-4 rounded-full border border-neutral-600 bg-neutral-950"
+                aria-hidden
+              >
+                <span className="absolute inset-1 rounded-full bg-neutral-400" />
+              </span>
+              <div className="rounded-2xl border border-neutral-800 bg-neutral-950/40 p-6 md:p-8">
+                <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-light text-white">
+                      {role.title}
+                    </h3>
+                    <p className="text-neutral-300 font-light mt-1">{role.company}</p>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    {role.current && (
+                      <span className="text-[11px] uppercase tracking-wider text-emerald-400/90 border border-emerald-500/30 rounded-full px-2.5 py-0.5">
+                        Current
+                      </span>
+                    )}
+                    <p className="text-neutral-500 text-sm font-light">{role.dates}</p>
+                  </div>
+                </div>
+                <ul className="space-y-2.5">
+                  {role.bullets.map((bullet) => (
+                    <li
+                      key={bullet}
+                      className="text-neutral-400 text-sm font-light leading-relaxed flex gap-2"
+                    >
+                      <span className="text-neutral-600 shrink-0" aria-hidden>
+                        •
+                      </span>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          </Reveal>
+        ))}
       </div>
     </Section>
   );
