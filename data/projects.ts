@@ -78,9 +78,8 @@ const projects: Project[] = [
     ],
     impact:
       'Shipped a production-ready multilingual platform covering ordering, admin workflows, and real-time data with reusable components and animation.',
-    url: '#',
+    url: 'https://dinery-app-ppbj.vercel.app/',
     featured: true,
-    proprietary: true,
     problem:
       'A restaurant technology product needed a customer-facing bilingual web app and a serious admin console for ordering, live status, inventory, and analytics, without compromising RTL or motion quality.',
     whatIBuilt:
